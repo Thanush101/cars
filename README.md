@@ -17,7 +17,7 @@ The Cars List Project is a web application built using Django, allowing users to
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/cars-list.git
+   https://github.com/ttk4001/cars.git
    cd cars
 
 
