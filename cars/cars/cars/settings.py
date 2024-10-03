@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-896g6rg&ne=#ewaiozuj=o-2q(187!8rw_f2+!@=6tk*uvvow9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = [
      'localhost',
     '127.0.0.1',
@@ -46,7 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'carapp'
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://shimmering-rebirth-production.up.railway.app',
+    # Add any other domains you trust here
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
