@@ -8,9 +8,11 @@ def add_car(request):
         form = CarForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('cars_list') 
-        form = CarForm()
-    return render(request, 'add_car.html', {'form': form})
+            return redirect('cars_list')  # Redirect to a list of cars after successful form submission
+    else:
+        form = CarForm()  # Initialize form for GET request (when no POST data is sent)
+    
+    return render(request, 'add_car.html', {'form': form}) 
 
 def cars_home(request):
     context = {
