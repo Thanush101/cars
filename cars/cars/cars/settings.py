@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-896g6rg&ne=#ewaiozuj=o-2q(187!8rw_f2+!@=6tk*uvvow9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+     'localhost',
+    '127.0.0.1',
+    'gascasestudy-production.up.railway.app',
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
